@@ -1,0 +1,13 @@
+.not-found-wrapper{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  .not-found-text{
+    padding: 10px;
+    font-weight: 400;
+    color: var(--color-light-greey);
+  }
+  .not-found-text:first-child{
+    border-right: 1px solid;
+  }
+}

@@ -1,0 +1,12 @@
+.subscription-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  .marker-button.marker-button-primary{
+    width: fit-content;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+  }
+}

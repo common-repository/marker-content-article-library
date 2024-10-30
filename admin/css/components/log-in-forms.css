@@ -1,0 +1,115 @@
+.plugin-content-wrapper{
+    margin-top: 20px;
+    position: relative;
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px 20px;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+
+.plugin-content-wrapper .register-form-wrapper ,.plugin-content-wrapper .login-form-wrapper{
+    transition: transform .3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper{
+    width: 100%;
+}
+
+.form-wrapper h2 {
+    font-size: 21px;
+}
+
+.form-switch-right,.form-switch-left{
+    cursor: pointer;
+    font-size: 14px;
+}
+.move-right{
+    transform: translateX(100vw);
+    height: 0;
+    display: none;
+}
+
+.move-left{
+    transform: translateX(-100vw);
+    height: 0;
+    display: none;
+}
+.markercontent_add_user_meta_form{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+    width: 100%;
+
+}
+
+.markercontent_add_user_meta_form form input{
+    width: 100%;
+    border-radius: 1.5rem;
+    border-width: 1px;
+    padding: 0.75rem 1rem;
+    transition: border .3s;;
+    margin: 8px 0;
+}
+
+.markercontent_add_user_meta_form form label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+.markercontent_add_user_meta_form form .button-primary{
+    padding: 0.75rem 3rem;
+    border-radius: 1.5rem;
+    font-size: 19px;
+    font-weight: 700;
+    background: var( --color-green);
+    border-color: white;
+}
+
+.markercontent_add_user_meta_form form .button-primary:hover{
+    background: #5E605E;
+}
+.markercontent_add_user_meta_form form .button-primary:focus{
+    background: #5E605E;
+}
+
+.form-switch-right>span:nth-child(2),.form-switch-left>span:nth-child(2){
+    color: var( --color-green)
+}
+
+.markercontent_form_feedback .answer{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+}
+
+.passwordRestore-form-wrapper{
+    transition: transform .3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgotPass{
+    display: block;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: var(--color-green);
+}
+
+.answer.success{
+    color: green;
+}
+
+.newsSubscription{
+    width: auto!important;
+}

@@ -1,0 +1,27 @@
+.paginationWrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  li{
+    a{
+      width: 1.7rem;
+      height: 1.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--color-ligt-green);
+      margin: 0.2rem;
+      border-radius: 100%;
+      padding: 0.3rem;
+      cursor: pointer;
+      color:  var(--color-green);
+      font-weight: 700;
+    }
+  }
+  li.currentPage{
+    a {
+      background: var(--color-green);
+      color: white;
+    }
+  }
+}

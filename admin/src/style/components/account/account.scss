@@ -1,0 +1,52 @@
+@import "Personaldetails";
+
+.user-account{
+  display: flex;
+  justify-content: space-between;
+  h3{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+
+
+  .account-navigation{
+    width: 100%;
+  }
+  .account-profile-form{
+    width: 100%;
+    form>*{
+      margin-bottom: 15px;
+    }
+    form{
+      span{
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 5px;
+      }
+
+      .success{
+        color: white;
+        background-color: var(--color-green);
+      }
+      .error{
+        color: white;
+        background-color: #ff9d9d;
+      }
+    }
+  }
+  .account-menu{
+    .account-menu-item{
+      padding: 15px 0;
+      a{
+        color: #3c434a;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      a.active{
+        font-weight: 600;
+      }
+    }
+  }
+}

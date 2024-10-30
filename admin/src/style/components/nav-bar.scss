@@ -1,0 +1,137 @@
+.navbar-wrapper {
+  position: relative;
+  border-bottom: 1px solid var(--light-blue);
+
+  ul li.menu-item {
+    cursor: pointer;
+  }
+
+  .hidden {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .markerContent-profile {
+    position: absolute;
+    background-color: white;
+    white-space: nowrap;
+    padding: 10px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: -1px 6px 12px #a1a1a1,
+    -6px -6px 12px #ffffff;
+    transition: all 0.5s;
+    opacity: 1;
+
+    a {
+      color: #3c434a;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    a.active {
+      font-weight: 600;
+    }
+  }
+
+  .marker-button-secondary.subs-counter {
+    width: auto;
+    padding: 0.3rem 1.5rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+
+  .user-logo {
+    margin-bottom: unset;
+  }
+
+  .pricingLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color-main-grey);
+    background: transparent;
+    margin-top:unset;
+    margin-right: 1.5rem;
+  }
+  .creditsLink{
+    display: flex;
+    justify-content: center;
+    text-decoration: none
+  }
+
+  .searchWrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 5px 40px;
+
+    form {
+      width: 100%;
+      display: flex;
+      position: relative;
+
+      .search-icon-wrapper {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+
+        &__right {
+          right: 10px;
+        }
+
+        &__left {
+          left: 10px;
+        }
+      }
+
+      .search-input {
+        width: 100%;
+        border-radius: $radius-default;
+        background-color: var(--light-blue);
+        padding: 0 35px;
+      }
+    }
+
+    .autocomplete-list {
+      position: absolute;
+      background: white;
+      top: 55px;
+      width: 100%;
+      border-radius: 10px;
+      box-sizing: border-box;
+      overflow-y: auto;
+      height: 200px;
+      box-shadow: -1px 6px 12px #a1a1a1, -6px -6px 12px #ffffff;
+
+      .searchResultItem {
+        padding: 10px;
+        font-size: 0.8rem;
+        cursor: pointer;
+      }
+
+      .searchResultItem:hover {
+        background: #c7c7c7;
+      }
+    }
+
+    .autocomplete-list::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    .autocomplete-list::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "components/variables";
+@import "components/nav-bar";
+@import "components/Page404";
+@import "components/cart";
+@import "components/paumentResult";
+@import "components/subs-pricing";
+@import "components/subscription";
+@import "components/home-page-text";
+@import "components/account/account";
+@import "components/content/articles";
+@import "components/content/article";
+@import "components/content/paginate";
+
+body *{
+  .article-page{
+    position: relative;
+    background-color: white;
+    margin-right: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container{
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .preloaderWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  a {
+    border: none;
+  }
+  a:focus{
+    outline: none;
+  }
+}

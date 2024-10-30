@@ -1,0 +1,12 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@import url('./components/log-in-forms.css');
+@import url('./components/loader.css');
+@import url('./components/popUp.css');
+
+
+:root {
+    --color-green: rgb(37 204 189);;
+}

@@ -1,0 +1,49 @@
+.articleWrapper{
+  flex-direction: column;
+  .articleHeader{
+    width: 100%;
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    .articleInfo{
+      .articleCategories{
+        display: flex;
+        .articleCategory{
+          font-weight: 700;
+          line-height: 1rem;
+          margin-bottom: 0.5rem;
+          margin-right: 0.5rem;
+          padding: 0.25rem 1rem;
+          text-transform: uppercase;
+          border-radius: 1.5rem;
+          background: var(--light-blue);
+        }
+      }
+    }
+    .articleInteraction{
+      max-width: 12rem;
+      display: flex;
+      flex-direction: column;
+      button{
+        padding: 0.5rem 1rem;
+        width: auto;
+        font-size: 15px;
+      }
+      .marker-button-primary{
+        margin-top: 1rem
+      }
+      .articleInCart{
+        text-align: center;
+        margin: 0.5rem;
+        font-size: 1em;
+        font-weight: 700;
+      }
+      .purchased-link{
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+        text-decoration: unset;
+      }
+    }
+  }
+}

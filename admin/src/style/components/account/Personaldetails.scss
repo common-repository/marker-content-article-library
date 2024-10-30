@@ -1,0 +1,39 @@
+.account-profile-form{
+  .FormInput input{
+    width: 100%;
+    border-radius: $radius-default;
+    border-width: 0.5px;
+    padding: 0.6rem 1rem;
+    transition: border .3s;;
+    margin: 8px 0;
+    background-color: var(--light-blue);
+  }
+
+  .FormInput input:focus{
+    border-color: black;
+  }
+
+  .FormInput label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+
+  .first-last-name{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first-last-name .FormInput:first-child {
+    margin-right: 10px;
+  }
+  .first-last-name .FormInput:last-child{
+    margin-left: 10px;
+  }
+
+  .marker-button-disabled{
+    opacity: 0.5;
+    cursor: unset;
+
+  }
+}

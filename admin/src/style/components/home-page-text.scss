@@ -1,0 +1,64 @@
+.homePageTextWrapper {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .homePageTitle {
+    font-size: 3em;
+    color: var(--color-main-grey);
+  }
+
+  .homePageMainText p {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .ul-wrapper {
+    background: var(--color-main-grey);
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #74C6C2;
+
+    .stepsTitle {
+      font-size: 1.5em;
+      color: var(--color-green);
+      text-decoration: underline;
+      margin: 0.5em 0;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      counter-reset: li;
+      font-size: 1.1em;
+      margin-left: 1rem;
+      margin-top: 0.3rem;
+
+      .stepsItem {
+        counter-increment: li;
+        font-size: 1.1em;
+      }
+
+      .stepsItem::before {
+        content: counter(li);
+        color: var(--color-green);
+        display: inline-block;
+        width: 1em;
+        margin-left: -0.5em;
+      }
+
+    }
+  }
+
+  h3{
+    color: var(--color-green);
+    font-size: 1.4em;
+  }
+}

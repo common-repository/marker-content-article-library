@@ -1,0 +1,110 @@
+//colors
+:root {
+  --color-green: #00C49C;
+  --color-ligt-green:#EEF9F5 ;
+  --color-light-greey:#a0aec0;
+  --color-main-grey:#5E605E;
+  --color-background: rgb(249, 250 ,251);
+  --light-blue: rgb(240, 244, 246);
+  --color-border:rgb(229 ,231 ,235)
+}
+
+//fonts family
+
+
+//fonts sizes
+$h1-font-size: 64px;
+$h2-font-size: 48px;
+$h3-font-size: 32px;
+$h4-font-size: 24px;
+$h5-font-size: 16px;
+$link-font-size: 14px;
+
+//fonts weight
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+
+//containers
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xxl: 1280px
+);
+
+//borderRadius
+$radius-default: 1.5rem;
+
+//breakpoints
+$xxl: '1400px';
+$lg: '992px';
+$md: '768px';
+$sm: '576px';
+body * {
+  .marker-button {
+    padding: 1rem 2rem;
+    border-radius: $radius-default;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .marker-button-primary, .marker-button-disabled {
+    background: var(--color-green) !important;
+    color: white;
+  }
+
+  .marker-button-secondary {
+    padding: 12px;
+    background: var(--color-ligt-green) !important;
+    color: var(--color-green);
+  }
+  .pricingLink{
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    background: rgb(94,96,94);
+    color: white;
+    text-decoration: none;
+    border-radius: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  .main-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+  }
+
+  .bg-gray{
+    background: var(--color-background);
+  }
+  .user-logo{
+    max-width: 50px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin-bottom: 20px;
+  }
+
+  .article-category{
+    background-color: rgb(243 244 246/1);
+    border-radius: $radius-default;
+    color: rgb(17 24 39/1);
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+  }
+}
